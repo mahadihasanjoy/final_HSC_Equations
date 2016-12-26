@@ -1,5 +1,6 @@
 package com.appsfacto.hsc_equations;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,15 +14,63 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.appsfacto.hsc_equations.helper.Constant;
+
 public class Chapter extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    int grid_no = 1;
+    String title = "Physics 1st Paper";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            grid_no = extras.getInt(Constant.GRID_NO);
+            title = extras.getString(Constant.TITLE);
+        }
         setSupportActionBar(toolbar);
+
+        switch (grid_no){
+            case 1:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_1)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+            case 2:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_2)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+            case 3:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_3)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+            case 4:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_4)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+            case 5:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_5)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+            case 6:
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_6)));
+                getSupportActionBar().setTitle(title);
+
+                break;
+
+            default:
+                break;
+        }
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
