@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HSC Equations</string>
+
+    <string name="chapter_name_1">Physics\n1st Paper</string>
+    <string name="chapter_name_2">Physics\n2nd Paper</string>
+    <string name="chapter_name_3">Chemistry\n1st Paper</string>
+    <string name="chapter_name_4">Chemistry\n2nd Paper</string>
+    <string name="chapter_name_5">Mathematics\n1st Paper</string>
+    <string name="chapter_name_6">Mathematics\n2nd Paper</string>
+    <string name="title_activity_chapter">Chapter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>
