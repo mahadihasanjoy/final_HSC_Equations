@@ -16,7 +16,7 @@ import android.view.MenuItem;
 
 import com.appsfacto.hsc_equations.helper.Constant;
 
-public class Chapter extends AppCompatActivity
+public class ChapterActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     int grid_no = 1;
     String title = "Physics 1st Paper";
@@ -34,7 +34,7 @@ public class Chapter extends AppCompatActivity
         }
         setSupportActionBar(toolbar);
 
-        switch (grid_no){
+        switch (grid_no) {
             case 1:
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_1)));
                 getSupportActionBar().setTitle(title);
@@ -70,9 +70,6 @@ public class Chapter extends AppCompatActivity
             default:
                 break;
         }
-
-
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

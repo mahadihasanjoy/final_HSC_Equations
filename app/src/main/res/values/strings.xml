@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">HSC Equations</string>
+    <string name="app_name"> এইচ এস সি- সূত্রাবলী</string>
 
-    <string name="chapter_name_1">Physics\n1st Paper</string>
-    <string name="chapter_name_2">Physics\n2nd Paper</string>
-    <string name="chapter_name_3">Chemistry\n1st Paper</string>
-    <string name="chapter_name_4">Chemistry\n2nd Paper</string>
-    <string name="chapter_name_5">Mathematics\n1st Paper</string>
-    <string name="chapter_name_6">Mathematics\n2nd Paper</string>
+    <string name="chapter_name_1">পদার্থ\n১ম পত্র</string>
+    <string name="chapter_name_2">পদার্থ\n২য় পত্র</string>
+    <string name="chapter_name_3">রসায়ন\n১ম পত্র</string>
+    <string name="chapter_name_4">রসায়ন\n২য় পত্র</string>
+    <string name="chapter_name_5">গণিত\n১ম পত্র</string>
+    <string name="chapter_name_6">গণিত\n২য় পত্র</string>
     <string name="title_activity_chapter">Chapter</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -3,27 +3,20 @@ package com.appsfacto.hsc_equations;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.appsfacto.hsc_equations.helper.Constant;
 
-public class homeActivity extends AppCompatActivity implements View.OnClickListener{
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
     TextView tvChapterName_1, tvChapterName_2,tvChapterName_3,tvChapterName_4,tvChapterName_5,tvChapterName_6;
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.activity_home);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -93,44 +86,44 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
         switch (view.getId()) {
             case R.id.grid_1:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 1);
-                i.putExtra(Constant.TITLE,"Physics 1st Paper");
+                i.putExtra(Constant.TITLE, getResources().getString(R.string.chapter_name_1));
                 startActivity(i);
                 break;
 
             case R.id.grid_2:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 2);
-                i.putExtra(Constant.TITLE,"Physics 2nd Paper");
+                i.putExtra(Constant.TITLE,getResources().getString(R.string.chapter_name_2));
                 startActivity(i);
                 break;
 
             case R.id.grid_3:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 3);
-                i.putExtra(Constant.TITLE,"Chemistry 1st Paper");
+                i.putExtra(Constant.TITLE,getResources().getString(R.string.chapter_name_3));
                 startActivity(i);
                 break;
 
             case R.id.grid_4:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 4);
-                i.putExtra(Constant.TITLE,"Chemistry 2nd Paper");
+                i.putExtra(Constant.TITLE,getResources().getString(R.string.chapter_name_4));
                 startActivity(i);
                 break;
 
             case R.id.grid_5:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 5);
-                i.putExtra(Constant.TITLE,"Mathematics 1st Paper");
+                i.putExtra(Constant.TITLE,getResources().getString(R.string.chapter_name_5));
                 startActivity(i);
                 break;
 
             case R.id.grid_6:
-                i = new Intent(this, Chapter.class);
+                i = new Intent(this, ChapterActivity.class);
                 i.putExtra(Constant.GRID_NO, 6);
-                i.putExtra(Constant.TITLE,"Mathematics 2nd Paper");
+                i.putExtra(Constant.TITLE,getResources().getString(R.string.chapter_name_6));
                 startActivity(i);
                 break;
 
