@@ -46,6 +46,10 @@
             android:id="@+id/chapter_11"
 
             android:title="Chapter 11" />
+        <item
+            android:id="@+id/chapter_12"
+
+            android:title="Chapter 12" />
     </group>
 
 
