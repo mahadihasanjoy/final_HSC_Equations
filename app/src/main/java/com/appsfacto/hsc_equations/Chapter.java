@@ -49,6 +49,7 @@ public class Chapter extends AppCompatActivity
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_3)));
                 getSupportActionBar().setTitle(title);
 
+
                 break;
             case 4:
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_4)));

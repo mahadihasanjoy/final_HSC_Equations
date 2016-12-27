@@ -9,25 +9,25 @@
     <color name="black_10">#33000000</color>
     <color name="blue">#0000CC</color>
 
-    <color name="bg_chapter_1">#283593</color>
-    <color name="bg_chapter_pressed_1">#3949ab</color>
+    <color name="bg_chapter_1">#ff4000</color>
+    <color name="bg_chapter_pressed_1">#ff8000</color>
 
-    <color name="bg_chapter_2">#3949ab</color>
-    <color name="bg_chapter_pressed_2">#283593</color>
+    <color name="bg_chapter_2">#ff8000</color>
+    <color name="bg_chapter_pressed_2">#ff4000</color>
 
-    <color name="bg_chapter_3">#3949ab</color>
-    <color name="bg_chapter_pressed_3">#283593</color>
-
-
-    <color name="bg_chapter_4">#283593</color>
-    <color name="bg_chapter_pressed_4">#3949ab</color>
+    <color name="bg_chapter_3">#ffbf00</color>
+    <color name="bg_chapter_pressed_3">#ffff00</color>
 
 
-    <color name="bg_chapter_5">#283593</color>
-    <color name="bg_chapter_pressed_5">#3949ab</color>
+    <color name="bg_chapter_4">#ffff00</color>
+    <color name="bg_chapter_pressed_4">#ffbf00</color>
 
 
-    <color name="bg_chapter_6">#3949ab</color>
-    <color name="bg_chapter_pressed_6">#283593</color>
+    <color name="bg_chapter_5">#bfff00</color>
+    <color name="bg_chapter_pressed_5">#80ff00</color>
+
+
+    <color name="bg_chapter_6">#80ff00</color>
+    <color name="bg_chapter_pressed_6">#bfff00</color>
 
 </resources>
