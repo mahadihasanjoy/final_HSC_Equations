@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import com.appsfacto.hsc_equations.helper.Constant;
 
@@ -20,7 +22,7 @@ public class ChapterActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     int grid_no = 1;
     String title = "Physics 1st Paper";
-
+    WebView wv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,17 +35,20 @@ public class ChapterActivity extends AppCompatActivity
             title = extras.getString(Constant.TITLE);
         }
         setSupportActionBar(toolbar);
-
+        wv= (WebView)findViewById(R.id.wvChapter);
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setSupportZoom(true);
         switch (grid_no) {
             case 1:
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_1)));
                 getSupportActionBar().setTitle(title);
-
+                wv.loadUrl("file:///android_asset/phy/chapter1.html");
                 break;
             case 2:
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_2)));
                 getSupportActionBar().setTitle(title);
-
+                wv.loadUrl("file:///android_asset/index.html");
                 break;
             case 3:
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bg_chapter_3)));
@@ -120,8 +125,9 @@ public class ChapterActivity extends AppCompatActivity
 
         if (id == R.id.chapter_1) {
             // Handle the camera action
+            wv.loadUrl("file:///android_asset/phy/chapter1.html");
         } else if (id == R.id.chapter_2) {
-
+            wv.loadUrl("file:///android_asset/phy/chapter2.html");
         } else if (id == R.id.chapter_3) {
 
         } else if (id == R.id.chapter_4) {
@@ -137,6 +143,7 @@ public class ChapterActivity extends AppCompatActivity
         } else if (id == R.id.chapter_9) {
 
         } else if (id == R.id.chapter_10) {
+            wv.loadUrl("file:///android_asset/math/Chapter10.html");
 
         } else if (id == R.id.chapter_11) {
 
