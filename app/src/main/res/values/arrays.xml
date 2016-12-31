@@ -1,75 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="physics1">
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
-        <item>physics1 - Chpater 1</item>
+        <item>১। ভৌত জগৎ ও পরিমাপ</item>
+        <item>২। ভেক্টর</item>
+        <item>৩। গতিবিদ্যা</item>
+        <item>৪। নিউটনিয়ান বলবিদ্যা</item>
+        <item>৫। কাজ, শক্তি ও ক্ষমতা</item>
+        <item>৬। মহাকর্ষ ও অভিকর্ষ</item>
+        <item>৭। পদার্থের গাঠনিক ধর্ম</item>
+        <item>৮। পর্যায়বৃত্তিক গতি</item>
+        <item>৯। তরঙ্গ</item>
+        <item>১০। আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব</item>
     </string-array>
 
     <string-array name="physics2">
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
-        <item>physics2 - Chpater 1</item>
+        <item>১। তাপগতিবিদ্যা</item>
+        <item>২। স্থির তড়িৎ</item>
+        <item>৩। চল তড়িৎ</item>
+        <item>৪। তড়িৎ  প্রবাহের চৌম্বক ক্রিয়া ও চুম্বকত্ব</item>
+        <item>৫। তড়িৎ চৌম্বক  আবেশ ও পরিবর্তী প্রবাহ</item>
+        <item>৬। জ্যামিতিক আলোকবিজ্ঞান</item>
+        <item>৭। ভৌত আলোকবিজ্ঞান</item>
+        <item>৮। আধুনিক পদার্থবিজ্ঞানের সূচনা</item>
+        <item>৯। পরমাণুর মডেল এবং নিউক্লিয়ার  পদার্থবিজ্ঞান</item>
+        <item>১০। সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স</item>
+        <item>১১। জোত্যির্বিজ্ঞান</item>
     </string-array>
 
     <string-array name="chemistry1">
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
-        <item>C 1 - Chpater 1</item>
+        <item>১। ল্যাবরেটরির নিরাপদ ব্যবহার</item>
+        <item>২। গুণগত রসায়ন</item>
+        <item>৩। মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন</item>
+        <item>৪। রাসায়নিক পরিবর্তন</item>
     </string-array>
 
     <string-array name="chemistry2">
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
-        <item>C 2 - Chpater 1</item>
+        <item>১। পরিবেশ রসায়ন</item>
+        <item>৩। পরিমাণগত রসায়ন</item>
+        <item>৪। তড়িৎ রসায়ন</item>
     </string-array>
 
     <string-array name="math1">
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
-        <item>Math 1 - Chpater 1</item>
+        <item>১। ম্যাট্রিক্স ও নির্নায়ক</item>
+        <item>২। ভেক্টর</item>
+        <item>৩। সরলরেখা</item>
+        <item>৪। বৃত্ত</item>
+        <item>৫। বিন্যাস ও সমাবেশ</item>
+        <item>৬। ত্রিকোণমিতি</item>
+        <item>৭। ত্রিভূজের ধর্ম</item>
+        <item>৮। বিপরীত ত্রিকোণমিতিক ফাংশন</item>
+        <item>৯। অন্তরীকরণ</item>
+        <item>১০। যোগজীকরণ</item>
     </string-array>
 
     <string-array name="math2">
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
-        <item>Math 2 - Chpater 1</item>
+        <item>১। বাস্তব সংখ্যা</item>
+        <item>৩। জটিল সংখ্যা</item>
+        <item>৪। বহুপদী ও বহুপদী সমীকরণ</item>
+        <item>৫। দ্বিপদী বিস্তৃতি</item>
+        <item>৬। কণিক</item>
+        <item>৭। বিপরীত ত্রিকোণমিতিক ফাংশন ও ত্রিকোণমিতিক সমীকরণ</item>
+        <item>৮। স্থিতিবিদ্যা</item>
+        <item>৯। সমতলে বস্তুকণার গতি</item>
+        <item>১০। বিস্তার পরিমাপ ও সম্ভাবনা</item>
     </string-array>
+
 
 </resources>
