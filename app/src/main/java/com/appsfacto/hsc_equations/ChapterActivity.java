@@ -2,37 +2,50 @@ package com.appsfacto.hsc_equations;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.appsfacto.hsc_equations.helper.Constant;
 
-public class ChapterActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class ChapterActivity extends AppCompatActivity {
+
     int grid_no = 1;
-    String title = "Physics 1st Paper";
+    String title = "পদার্থ\\n১ম পত্র";
+    String bookName = "math1";
+    DrawerLayout drawer;
+    ListView mDrawerList;
+    WebView wv;
+    String url = "file:///android_asset/" + bookName + "/chapter1.html";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             grid_no = extras.getInt(Constant.GRID_NO);
             title = extras.getString(Constant.TITLE);
+            bookName = extras.getString(Constant.BOOK_NAME);
         }
-        setSupportActionBar(toolbar);
+
+        wv = (WebView) findViewById(R.id.wvChapter);
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setSupportZoom(true);
+        url = "file:///android_asset/" + bookName + "/chapter1.html";
+        wv.loadUrl(url);
 
         switch (grid_no) {
             case 1:
@@ -72,78 +85,62 @@ public class ChapterActivity extends AppCompatActivity
         }
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.lv_right_drawer);
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        // Set the adapter for the list view
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.custom_textview, getChapterNames(title)));
+
+        // Set the list's click listener
+        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                url = "file:///android_asset/" + bookName + "/chapter" + (position + 1) + ".html";
+                wv.loadUrl(url);
+
+                if (drawer.isDrawerOpen(Gravity.RIGHT)) {
+                    drawer.closeDrawer(Gravity.RIGHT);
+                }
+            }
+        });
+
     }
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.chapter, menu);
-        return true;
+
+        getMenuInflater().inflate(R.menu.menu_chapter_right_side_drawer, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.chapter_1) {
-            // Handle the camera action
-        } else if (id == R.id.chapter_2) {
-
-        } else if (id == R.id.chapter_3) {
-
-        } else if (id == R.id.chapter_4) {
-
-        } else if (id == R.id.chapter_5) {
-
-        } else if (id == R.id.chapter_6) {
-
-        } else if (id == R.id.chapter_7) {
-
-        } else if (id == R.id.chapter_8) {
-
-        } else if (id == R.id.chapter_9) {
-
-        } else if (id == R.id.chapter_10) {
-
-        } else if (id == R.id.chapter_11) {
-
+        if (item != null && item.getItemId() == R.id.menu_chapter) {
+            if (drawer.isDrawerOpen(Gravity.RIGHT)) {
+                drawer.closeDrawer(Gravity.RIGHT);
+            } else {
+                drawer.openDrawer(Gravity.RIGHT);
+            }
+            return true;
         }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+        return false;
     }
+
+    private String[] getChapterNames(String title) {
+        if (title.equals(getResources().getString(R.string.chapter_name_1)))
+            return getResources().getStringArray(R.array.physics1);
+        else if (title.equals(getResources().getString(R.string.chapter_name_2)))
+            return getResources().getStringArray(R.array.physics2);
+        else if (title.equals(getResources().getString(R.string.chapter_name_3)))
+            return getResources().getStringArray(R.array.chemistry1);
+        if (title.equals(getResources().getString(R.string.chapter_name_4)))
+            return getResources().getStringArray(R.array.chemistry2);
+        if (title.equals(getResources().getString(R.string.chapter_name_5)))
+            return getResources().getStringArray(R.array.math1);
+
+        return getResources().getStringArray(R.array.math2);
+    }
+
 }

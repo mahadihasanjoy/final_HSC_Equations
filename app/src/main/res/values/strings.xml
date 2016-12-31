@@ -1,18 +1,45 @@
 <resources>
-    <string name="app_name"> এইচ এস সি- সূত্রাবলী</string>
-
+    <string name="home_title"> এইচ এস সি- সূত্রাবলী</string>
+    <string name="app_name">HSC Equations</string>
     <string name="chapter_name_1">পদার্থ\n১ম পত্র</string>
     <string name="chapter_name_2">পদার্থ\n২য় পত্র</string>
     <string name="chapter_name_3">রসায়ন\n১ম পত্র</string>
     <string name="chapter_name_4">রসায়ন\n২য় পত্র</string>
     <string name="chapter_name_5">গণিত\n১ম পত্র</string>
     <string name="chapter_name_6">গণিত\n২য় পত্র</string>
-    <string name="title_activity_chapter">Chapter</string>
+    <string name="title_activity_chapter">সূত্রাবলী</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">সেটিংস</string>
+
+
+    <!-- - About Screen strings -->
+    <string name="about_title">অ্যাপ সম্পর্কিত তথ্য</string>
+
+    <string name="app">এইচ এস সি- সূত্রাবলী</string>
+    <string name="app_name_version">এইচ এস সি- সূত্রাবলী: v-</string>
+    <string name="app_release_date">১লা জানুয়ারী, ২০১৭</string>
+
+    <string name="rate_our_app">আপনার মূল্যবান মতামত দিন</string>
+    <string name="click_to_rate"><u>রিভিউ লিখতে এখানে ক্লিক করুন</u></string>
+
+
+    <string name="information_and_help">পরিকল্পনা ও সম্পাদনা</string>
+    <string name="information_and_help_text1">রায়হান হোসেন মুকুল\nপ্রভাষক;</string>
+    <string name="information_and_help_text2">মোঃ মোস্তাসিম বিল্লাহ\nছাত্র- ১৭ তম ব্যাচ;</string>
+    <string name="information_and_help_text3">মেহেদী হাসান জয়\nছাত্র- ১৭ তম ব্যাচ;\nজয়ন্ত গোস্বামী দ্বীপ\nছাত্র- ১৭ তম ব্যাচ;</string>
+    <string name="information_and_help_text4">সফটওয়্যার ইঞ্জিনিয়ারিং ডিপার্টমেন্ট\nড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি</string>
+
+    <string name="contact">ডেভলপার কন্টাক্ট</string>
+    <string name="contact_developer_name">AppsFacto</string>
+    <string name="contact_text_mobile_1">+8801746969164</string>
+    <string name="contact_text_mobile_clone"> , </string>
+    <string name="contact_text_mobile_2"> +8801520090525</string>
+    <string name="contact_text_email">appsfacto@gmail.com</string>
+    <string name="contact_web">http://www.appsfacto.com</string>
+    <!-- end -->
 
 
 </resources>

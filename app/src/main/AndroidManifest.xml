@@ -14,10 +14,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ChapterActivity"
             android:label="@string/title_activity_chapter"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".HomeActivity"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".HomeActivity"></activity>
     </application>
 
 </manifest>

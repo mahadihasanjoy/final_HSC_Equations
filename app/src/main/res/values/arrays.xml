@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="physics1">
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+        <item>physics1 - Chpater 1</item>
+    </string-array>
+
+    <string-array name="physics2">
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+        <item>physics2 - Chpater 1</item>
+    </string-array>
+
+    <string-array name="chemistry1">
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+        <item>C 1 - Chpater 1</item>
+    </string-array>
+
+    <string-array name="chemistry2">
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+        <item>C 2 - Chpater 1</item>
+    </string-array>
+
+    <string-array name="math1">
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+        <item>Math 1 - Chpater 1</item>
+    </string-array>
+
+    <string-array name="math2">
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+        <item>Math 2 - Chpater 1</item>
+    </string-array>
+
+</resources>
