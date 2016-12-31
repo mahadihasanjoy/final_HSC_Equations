@@ -20,7 +20,7 @@ import com.appsfacto.hsc_equations.helper.Constant;
 public class ChapterActivity extends AppCompatActivity {
 
     int grid_no = 1;
-    String title = "পদার্থ\\n১ম পত্র";
+    String title = "??????\\n?? ????";
     String bookName = "math1";
     DrawerLayout drawer;
     ListView mDrawerList;
