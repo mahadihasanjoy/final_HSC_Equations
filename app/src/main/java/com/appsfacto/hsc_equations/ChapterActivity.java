@@ -4,7 +4,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,7 +19,7 @@ import com.appsfacto.hsc_equations.helper.Constant;
 public class ChapterActivity extends AppCompatActivity {
 
     int grid_no = 1;
-    String title = "??????\\n?? ????";
+    String title = "Physics 1s Paper";
     String bookName = "math1";
     DrawerLayout drawer;
     ListView mDrawerList;
