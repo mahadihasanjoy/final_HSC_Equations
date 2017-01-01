@@ -18,7 +18,8 @@
         <activity
             android:name=".ChapterActivity"
             android:label="@string/title_activity_chapter"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
             android:name=".AboutActivity"
